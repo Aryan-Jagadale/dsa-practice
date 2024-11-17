@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.component {
+  height: 20vh;
+  width: 50vw;
+  padding: 6px;
+}
+.title {
+  padding: 6px;
+  background-color: lightgray;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.spanRotate{
+    transform: rotate(180deg);
+}
+
+.desc,
+.title {
+  text-align: center;
+}
+
+.desc {
+  background-color: whitesmoke;
+  border: 1px dotted black;
+  padding: 10px;
+  display: none;
+}
+
+.desc-show {
+  display: block;
+}
