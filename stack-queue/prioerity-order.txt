@@ -1,0 +1,8 @@
+^     --->    MAx pri
+*  /  --->
++ -   --->    MIN pi
+( )   --->    Dont Think Anything
+
+INFIX ---> ( p + q ) * ( m - n )
+PREFIX ---> * + pq - mn
+POSTFIX ---> pq + mn - *
