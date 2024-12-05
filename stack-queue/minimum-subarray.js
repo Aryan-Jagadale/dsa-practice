@@ -17,6 +17,8 @@ var sumSubarrayMins = function(arr) {
         }
         stack.push(i);
     }
+    console.log("pse",pse);
+    
 
     stack.length = 0;
     stack = [];
@@ -37,7 +39,7 @@ var sumSubarrayMins = function(arr) {
 
     let result = 0;
     for (let i = 0; i < n; i++) {
-        const countLeft = i - pse[i];
+        const countLeft = i - pse[i];        
         const countRight = nse[i] - i;
         result = (result + arr[i] * countLeft * countRight) % MOD;
     }
@@ -49,3 +51,6 @@ var sumSubarrayMins = function(arr) {
 
 let rs = sumSubarrayMins([3,1,2,4]);
 console.log(rs); // 17
+
+
+3
