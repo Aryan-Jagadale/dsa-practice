@@ -44,23 +44,11 @@ class Node {
     }
 
     if (root.left !== null || root.right !== null) { /// not leaf node
-       root.data = total;
-        
+       root.data = total;   
     }
-
-
-
   
   }
   
-
-
-
-
-
-
-
-
 
 
 // Constructing the binary tree
