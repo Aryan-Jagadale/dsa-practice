@@ -1,24 +1,24 @@
-function arrayProductExcludingCurrent(numbers) {
-  let n = numbers.length;
-  let res = [];
-
-  let left = new Array(n);
-  left[0] = numbers[0];
-
-  for (let i = 1; i < n; i++) {
-    left[i] = left[i-1] * numbers[i-1]
+var insert = function(intervals, newInterval) {
+  let stack = [];
+  let n = intervals.length;
+  let merged = newInterval;
+  for (let i = 0; i < n; i++) {
+      let curr = intervals[i];
+      if (curr[1] < merged[0]) {
+          stack.push(curr);
+      } else if (curr[0] > merged[1]) { 1 > 15
+          stack.push(merged);
+          stack.push(...intervals.slice(i));
+          return stack;
+      } else {
+          merged[0] = Math.min(merged[0], curr[0]);
+          merged[1] = Math.max(merged[1], curr[1]);
+      }
   }
+  stack.push(merged);  
+  return stack;
+};
 
-  let right = 1;
 
-  for (let i = n - 1; i >= 0; i--) {
-    res[i] = left[i] * right;
-    right *= numbers[i];
-  }
-  
-
-  return res;
-}
-
-console.log(arrayProductExcludingCurrent([1, 2, 3, 4, 5])); // [120, 60, 40, 30, 24]
-
+console.log(insert([[1,2],[3,5],[6,10],[11,12],[13,16]], [8,15]));
+// Output: [[1,5],[6,9]]
