@@ -1,0 +1,5 @@
+LEFT NODE <=  ROOT NODE < RIGHT NODE    ===> BST condition
+left_subtree ===> Should be BST
+right_subtree ===> Should be BST
+
+Tranvel will be log2N
