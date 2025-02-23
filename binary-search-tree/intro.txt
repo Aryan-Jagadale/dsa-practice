@@ -3,3 +3,5 @@ left_subtree ===> Should be BST
 right_subtree ===> Should be BST
 
 Tranvel will be log2N
+
+Inorder of any Binary Search Tree is in the sorted order
